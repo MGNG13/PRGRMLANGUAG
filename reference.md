@@ -1,0 +1,4 @@
+- https://stackoverflow.com/questions/14954721/what-is-the-difference-between-a-token-and-a-lexeme
+- https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fbe%2F95%2Fb2%2Fbe95b2bcf54319f2c9032d0ea5b958be.jpg&f=1&nofb=1&ipt=a8fc0b863d875a28e262fd816a6d309209ca82d293b3d14af9c75c0559291297&ipo=images
+- https://codeforwin.org/fundamentals/introduction-to-programming-tokens
+- https://prepinsta.com/all-about-c-language/token/

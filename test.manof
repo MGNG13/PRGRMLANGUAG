@@ -1,0 +1,17 @@
+DIRECTORY CREATE -> test
+FILE CREATE -> test/test.echo
+SYSTEM EXECUTE -> echo "asd" > test/test.echo
+
+CODE CREATE -> test/index.js -> {
+    transpilation_language js;
+
+    function sum(integer: any=10) {
+        if any == 10 {
+            return sum <- 1;
+        }
+        variable const:integer local_sum = 5;
+        returnup local_sum;
+    }
+
+    println sum <- 10;
+}
