@@ -1,2 +1,2 @@
-# makode
+# Makode
 Manof Programming Language
