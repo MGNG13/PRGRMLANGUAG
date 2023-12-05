@@ -1,23 +1,20 @@
-PROCEDURE plus {
-    ADD 5 AND 15 AND 20 THEN PROCEDURE RETURN
-
-    # call method 'ADD'.
-    # add arguments to method (5 AND 15 AND 20).
-    # modify procedure finalization.
+# Normal method with arguments.
+# When use (), it makes an mathematical process to resolve this code.
+PROCEDURE plus (firstNumber, secondNumber, thirdNumber) {
+    RETURN _NUMBER_CALCULATION(firstNumber + secondNumber + thirdNumber)
 }
 
-PROCEDURE pi {
-    SAVE _MATH.PI THEN NAME LINE AS pi_value
-
-    # call method 'SAVE'.
-    # with `_` call constant PI from MATH library.
-    # modify procedure finalization
+# This method is using '_' as name and create the constant PI_VALUE as global variable.
+# This global variable is accessible by reference name 'PI_VALUE'.
+PROCEDURE _ {
+    RETURN _MATH.PI => PI_VALUE
 }
 
-WITH plus AND plus THEN PLUS AS test_operation
 
-SHOW VALUE test_operation
+_MAIN_THREAD {
+    # To method plus, add arguments in () and create local variable 'test_operation'.
+    CALL PLUS(5 + 15 + 20) -> test_operation
 
-# `WITH` this argument takes other pointers,
-# constants or values and makes a call
-# to any method allowed.
+    # Show variable created with result.
+    PRINT test_operation
+}

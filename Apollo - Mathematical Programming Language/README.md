@@ -1,3 +1,3 @@
-# Apollo ~ Mathematical Programming Language.
+# Apollo ~ Mathematical Interpreted Language.
 
-Be happy.
+Be happy and make mathematics.

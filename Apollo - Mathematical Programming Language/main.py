@@ -1,7 +1,10 @@
 # Python Imports.
 from sys import argv
-# Program constants.
-from program_constants import MAX_INPUT_SIZE
+
+# CONSTANTS.
+global MAX_INPUT_SIZE
+MAX_INPUT_SIZE = 1
+
 
 # This class makes some validations in all code processing.
 class Validator():
@@ -12,6 +15,7 @@ class Validator():
         except Exception:
             return False
 
+# Main class about apollo lang.
 class ApolloLang():
     class Keywords():
         class THEN():
@@ -62,7 +66,7 @@ class Tokens():
             except Exception:
                 pass
 
-# This class makes an 
+# This class makes an parsing of each line and each token.
 class Parser():
     def EmptyTokenizer(apollo_code: str) -> None or list:
         try:
@@ -76,6 +80,7 @@ class Parser():
             return None
 
 
+# Main thread running validation.
 if __name__ == '__main__':
     # Arguments to interpretter.
     ARGUMENTS = argv[1:]
@@ -93,5 +98,4 @@ if __name__ == '__main__':
             apollo_code_file.close()
 
             # Parsing.
-            plain_tokenization = Parser.EmptyTokenizer(apollo_code_content)
-            print(plain_tokenization)
+            print(Parser.EmptyTokenizer(apollo_code_content))
